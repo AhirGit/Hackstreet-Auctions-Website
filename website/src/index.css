@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.slick-prev::before, .slick-next::before {
+  color: lightblue !important;
+}
+
+html, body {
+  background-color: #EAF3FA;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
