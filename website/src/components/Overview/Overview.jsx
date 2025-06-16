@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { overviewContent } from './overviewContent';
 import logo from './resources/images/appHome.png';
-import fastIcon from './resources/icons/fastIcon.png';
-import trustedIcon from './resources/icons/trustedIcon.png';
-import uniqueFindIcon from './resources/icons/uniqueFindIcon.png';
+import { Link } from 'react-scroll';
 
 function Overview() {
   const [showFullVision, setShowFullVision] = useState(false);
 
-  const visionShortText = overviewContent.vision.slice(0, 588);
+  const visionShortText = overviewContent.vision.slice(0, 574);
 
   return (
     <div>
@@ -25,6 +23,20 @@ function Overview() {
               <p className="py-4 text-lg lg:text-2xl leading-relaxed">
                 {overviewContent.intro.text}
               </p>
+              {/* Our Vision button */}
+              <div className='mt-4'>
+                <Link
+                to="vision"
+                smooth={true}
+                duration={1000}
+                offset={-112}  // adjust this to match your navbar height if needed
+                className='inline-block bg-primary bg-cyan-700 text-white 
+                px-6 py-2 rounded-full font-semibold cursor-pointer 
+                transition transform hover:scale-110 hover:bg-cyan-900 duration-500'
+              >
+                Our Vision
+              </Link>
+              </div>
             </div>
             {/* Image Container */}
             <div className='px-3 py-10'>
@@ -33,7 +45,7 @@ function Overview() {
             </div>
           </div>
         </section>
-        <section className='container mx-auto px-8 py-18 text-blackn'>
+        <section className='container mx-auto px-8 py-18 text-black'>
           <div className="grid grid-cols-3 md:grid-cols-3 
                         gap-8 items-center text-center">
             {/* Highlight Icons */}
@@ -46,8 +58,12 @@ function Overview() {
             ))}
           </div>
         </section>
-        <section className='container mx-auto px-8
-         bg-[#D3E7F5] rounded-xl text-black'>
+        <section
+          id='vision'
+          className={`container mx-auto px-8 rounded-xl transition-colors duration-700 ${
+            showFullVision ? 'bg-cyan-900 text-white' : 'bg-[#D3E7F5] text-black'
+          }`}
+        >
           <div className='py-5'>
             <h1 className='text-2xl text-center font-bold'>
               Vision Statement

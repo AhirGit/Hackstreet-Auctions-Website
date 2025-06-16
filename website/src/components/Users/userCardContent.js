@@ -10,7 +10,7 @@ export const userCardContent = [
     title: 'Sellers & Small Businesses',
     text: `
       List your items easily and reach an active audience. 
-      Manage your sales securely through our built-in wallet system and get paid reliably — no complicated setup required.
+      Manage your sales securely through our built-in wallet system and get paid reliably no complicated setup required.
     `,
   },
   {
@@ -23,7 +23,7 @@ export const userCardContent = [
   {
     title: 'Security-Conscious Users',
     text: `
-      Stay in control of your spending with our secure wallet system — no need to share sensitive financial details. 
+      Stay in control of your spending with our secure wallet system no need to share sensitive financial details. 
       Hackstreet Auction puts your safety and peace of mind first.
     `,
   },

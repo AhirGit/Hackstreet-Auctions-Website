@@ -1,4 +1,3 @@
-import React from 'react';
 import { userCardContent } from './userCardContent';
 
 function Users() {

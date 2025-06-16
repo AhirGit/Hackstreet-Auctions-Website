@@ -1,4 +1,4 @@
-import React from 'react'
+// not used for now
 import catDemoVideo from './resources/videos/catDemoVideo.mp4';
 
 function Demo() {
@@ -15,11 +15,12 @@ function Demo() {
             <section className='px-12 bg-[#D3E7F5] rounded-xl text-black'>
               {/* Video Container */}
               <div className='px-3 py-10'>
-                <video 
-                  src={catDemoVideo}
-                  loop
-                  controls 
-                  className='w-auto h-auto rounded-xl shadow-lg'
+                <iframe
+                  className="w-full aspect-video rounded-xl shadow-lg"
+                  src="https://www.youtube.com/embed/4E7aJd0aSoU"
+                  title="Demo Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               </div>
             </section>

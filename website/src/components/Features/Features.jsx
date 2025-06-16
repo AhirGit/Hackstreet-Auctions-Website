@@ -1,9 +1,5 @@
-import React from 'react'
 import Slider from 'react-slick';
 import { featureContent } from './featureContent';
-import buyImage from './resources/images/buyImage.png';
-import bidImage from './resources/images/bidImage.png';
-import virtualCurrencyImage from './resources/images/virtualCurrencyImage.png';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

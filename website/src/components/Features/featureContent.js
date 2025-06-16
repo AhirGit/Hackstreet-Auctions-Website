@@ -7,7 +7,7 @@ export const featureContent = [
     title: 'Sell anything you want',
     text: `
       Effortlessly list your items for auction in just a few clicks. 
-      Whether it's collectibles, gadgets, or rare finds — showcase your 
+      Whether it's collectibles, gadgets, or rare finds showcase your 
       products to a wide community of eager bidders. 
       Manage your listings and watch the bids roll in!
     `,
